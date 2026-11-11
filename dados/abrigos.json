@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "nome": "Centro Comunitário Vila Esperança",
+    "bairro": "Sapopemba",
+    "tipos": ["calor"],
+    "endereco": "Rua Fictícia das Acácias, 210",
+    "acessibilidade": ["rampa", "banheiro_adaptado", "espaco_cadeira_rodas"],
+    "horario": "8h às 20h"
+  },
+  {
+    "id": 2,
+    "nome": "Ponto de Hidratação Praça das Flores",
+    "bairro": "Sapopemba",
+    "tipos": ["calor"],
+    "endereco": "Praça Fictícia das Flores, s/n",
+    "acessibilidade": ["rampa", "espaco_cadeira_rodas"],
+    "horario": "10h às 18h"
+  },
+  {
+    "id": 3,
+    "nome": "Salão Paroquial São Bento do Leste",
+    "bairro": "Sapopemba",
+    "tipos": ["calor", "chuva"],
+    "endereco": "Rua Fictícia do Rosário, 45",
+    "acessibilidade": ["espaco_cadeira_rodas"],
+    "horario": "24h durante alertas"
+  },
+  {
+    "id": 4,
+    "nome": "Escola Municipal Rio Claro (área alta)",
+    "bairro": "Jardim Pantanal",
+    "tipos": ["chuva"],
+    "endereco": "Rua Fictícia das Garças, 120",
+    "acessibilidade": ["rampa", "banheiro_adaptado", "espaco_cadeira_rodas"],
+    "horario": "24h durante alertas"
+  },
+  {
+    "id": 5,
+    "nome": "Associação de Moradores Terra Firme",
+    "bairro": "Jardim Pantanal",
+    "tipos": ["calor", "chuva"],
+    "endereco": "Rua Fictícia do Ipê, 88",
+    "acessibilidade": ["rampa"],
+    "horario": "8h às 22h"
+  },
+  {
+    "id": 6,
+    "nome": "Centro Esportivo Morro Verde",
+    "bairro": "Parque Brasilândia",
+    "tipos": ["chuva"],
+    "endereco": "Avenida Fictícia do Planalto, 1500",
+    "acessibilidade": ["rampa", "banheiro_adaptado", "espaco_cadeira_rodas"],
+    "horario": "24h durante alertas"
+  },
+  {
+    "id": 7,
+    "nome": "Biblioteca Comunitária Jardim do Sol",
+    "bairro": "Parque Brasilândia",
+    "tipos": ["calor"],
+    "endereco": "Rua Fictícia do Sol, 32",
+    "acessibilidade": ["banheiro_adaptado"],
+    "horario": "9h às 17h"
+  }
+]

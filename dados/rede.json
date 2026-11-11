@@ -1,0 +1,26 @@
+[
+  {
+    "nome": "Ana",
+    "tipo": "familiar",
+    "telefone": "11 90000-0001",
+    "bairro": "Mooca"
+  },
+  {
+    "nome": "Carlos",
+    "tipo": "familiar",
+    "telefone": "11 90000-0002",
+    "bairro": "Santo André"
+  },
+  {
+    "nome": "Rita",
+    "tipo": "voluntario",
+    "telefone": "11 90000-0003",
+    "bairro": "Sapopemba"
+  },
+  {
+    "nome": "José",
+    "tipo": "voluntario",
+    "telefone": "11 90000-0004",
+    "bairro": "Jardim Pantanal"
+  }
+]
