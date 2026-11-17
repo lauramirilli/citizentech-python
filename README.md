@@ -29,7 +29,7 @@ Esta pasta contém a aplicação em Python do Amparo, entregue para a disciplina
 - Biblioteca `requests`, usada para buscar a previsão de chuva
 
 **Como rodar**
-1. Abra a pasta `python/` como projeto.
+1. Abra a pasta `citizentech-python/` como projeto.
 2. Instale o `requests`: no terminal, rode o comando de instalação abaixo para o seu sistema.
 3. Abra o `main.py` e clique em **Run**.
 
