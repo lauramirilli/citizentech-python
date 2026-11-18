@@ -1,8 +1,14 @@
+# EQUIPE
+# Bruce Li 569168
+# Felipe Rorato	570419
+# Giovanna Andrade Parejas 569041
+# Laura Cardin Mirilli 570841
+
 from datetime import datetime
 import requests
-from arquivos import ler_json, salvar_json
-from entradas import ler_numero
-from validacao import previsao_valida
+from GS1_Amparo_Laura_arquivos import ler_json, salvar_json
+from GS1_Amparo_Laura_entradas import ler_numero
+from GS1_Amparo_Laura_validacao import previsao_valida
 
 BAIRROS = {
     "Sapopemba": (-23.604, -46.511),

@@ -1,6 +1,12 @@
+# EQUIPE
+# Bruce Li 569168
+# Felipe Rorato	570419
+# Giovanna Andrade Parejas 569041
+# Laura Cardin Mirilli 570841
+
 from datetime import datetime
-from arquivos import ler_json
-from risco import avaliar_risco, obter_recomendacoes, nivel_chuva, NIVEIS
+from GS1_Amparo_Laura_arquivos import ler_json
+from GS1_Amparo_Laura_risco import avaliar_risco, obter_recomendacoes, nivel_chuva, NIVEIS
 
 
 ICONES = {"NORMAL": "🟢", "ATENÇÃO": "🟡", "PERIGO": "🔴"}

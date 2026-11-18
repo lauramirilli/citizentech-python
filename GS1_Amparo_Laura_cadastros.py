@@ -1,10 +1,16 @@
+# EQUIPE
+# Bruce Li 569168
+# Felipe Rorato	570419
+# Giovanna Andrade Parejas 569041
+# Laura Cardin Mirilli 570841
+
 import random
 from datetime import datetime, timedelta
-from arquivos import ler_lista, salvar_json
-from entradas import ler_numero, ler_opcao, ler_texto, ler_sim_nao
-from ajuda import titulo
-from previsao import BAIRROS
-from validacao import leitura_valida, abrigo_valido, pessoa_valida
+from GS1_Amparo_Laura_arquivos import ler_lista, salvar_json
+from GS1_Amparo_Laura_entradas import ler_numero, ler_opcao, ler_texto, ler_sim_nao
+from GS1_Amparo_Laura_ajuda import titulo
+from GS1_Amparo_Laura_previsao import BAIRROS
+from GS1_Amparo_Laura_validacao import leitura_valida, abrigo_valido, pessoa_valida
 
 
 TEMP_MIN, TEMP_MAX = 0, 50

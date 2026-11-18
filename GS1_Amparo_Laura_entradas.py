@@ -1,3 +1,9 @@
+# EQUIPE
+# Bruce Li 569168
+# Felipe Rorato	570419
+# Giovanna Andrade Parejas 569041
+# Laura Cardin Mirilli 570841
+
 def ler_numero(mensagem: str, minimo: float, maximo: float) -> float:
     """Pede um número entre `minimo` e `maximo` até receber um válido.
 

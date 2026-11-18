@@ -32,16 +32,16 @@ Esta pasta contém a aplicação em Python do Amparo, entregue para a disciplina
 **Como rodar**
 1. Abra a pasta `citizentech-python/` como projeto.
 2. Instale o `requests`: no terminal, rode o comando de instalação abaixo para o seu sistema.
-3. Abra o `main.py` e clique em **Run**.
+3. Abra o `GS1_Amparo_Laura_main.py` e clique em **Run**.
 
 **Pelo terminal**
 
 | Sistema | Instalar o `requests` | Executar |
 |---|---|---|
-| Windows | `py -m pip install requests` | `py main.py` |
-| macOS / Linux | `python3 -m pip install requests` | `python3 main.py` |
+| Windows | `py -m pip install requests` | `py GS1_Amparo_Laura_main.py` |
+| macOS / Linux | `python3 -m pip install requests` | `python3 GS1_Amparo_Laura_main.py` |
 
-No Windows, se o comando `py` não existir, use `python` no lugar (`python -m pip install requests` e `python main.py`). Os comandos devem ser rodados dentro da pasta `python/`.
+No Windows, se o comando `py` não existir, use `python` no lugar (`python -m pip install requests` e `python GS1_Amparo_Laura_main.py`). Os comandos devem ser rodados dentro da pasta `python/`.
 
 O programa pode ser executado a partir de qualquer pasta: os arquivos de dados são localizados a partir da pasta do próprio código.
 
@@ -133,18 +133,18 @@ A previsão real vem da API pública **Open-Meteo**, que não exige cadastro. Se
 
 ```
 python/
-├── main.py         # loop principal: painel → menu → ação
-├── painel.py       # monta o painel de risco
-├── risco.py        # índice de calor, taxa, projeção, níveis e recomendações
-├── previsao.py     # previsão real (Open-Meteo), simulada e salva
-├── ajuda.py        # checagem, pedido de ajuda, rede de apoio e histórico
-├── cadastros.py    # leituras, abrigos, rede de apoio e perfil
-├── entradas.py     # leitura de dados do usuário com validação
-├── arquivos.py     # leitura e gravação dos arquivos JSON
-├── validacao.py    # verificação dos registros lidos dos arquivos
-├── dados/          # arquivos JSON
-├── README.md
-└── prompts.md      # registro do uso de inteligência artificial
+├── GS1_Amparo_Laura_main.py        # loop principal: painel → menu → ação
+├── GS1_Amparo_Laura_painel.py      # monta o painel de risco
+├── GS1_Amparo_Laura_risco.py       # índice de calor, taxa, projeção, níveis e recomendações
+├── GS1_Amparo_Laura_previsao.py    # previsão real (Open-Meteo), simulada e salva
+├── GS1_Amparo_Laura_ajuda.py       # checagem, pedido de ajuda, rede de apoio e histórico
+├── GS1_Amparo_Laura_cadastros.py   # leituras, abrigos, rede de apoio e perfil
+├── GS1_Amparo_Laura_entradas.py    # leitura de dados do usuário com validação
+├── GS1_Amparo_Laura_arquivos.py    # leitura e gravação dos arquivos JSON
+├── GS1_Amparo_Laura_validacao.py   # verificação dos registros lidos dos arquivos
+├── dados/                          # arquivos JSON
+├── GS1_Amparo_Laura_README.md
+└── GS1_Amparo_Laura_prompts.md     # registro do uso de inteligência artificial
 ```
 
 ### Conceitos da disciplina aplicados

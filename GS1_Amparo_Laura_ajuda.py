@@ -1,8 +1,14 @@
+# EQUIPE
+# Bruce Li 569168
+# Felipe Rorato	570419
+# Giovanna Andrade Parejas 569041
+# Laura Cardin Mirilli 570841
+
 from datetime import datetime
 
-from arquivos import ler_lista, salvar_json
-from entradas import ler_sim_nao
-from validacao import pessoa_valida, alerta_valido
+from GS1_Amparo_Laura_arquivos import ler_lista, salvar_json
+from GS1_Amparo_Laura_entradas import ler_sim_nao
+from GS1_Amparo_Laura_validacao import pessoa_valida, alerta_valido
 
 TELEFONES_EMERGENCIA = (("SAMU", "192"), ("Bombeiros", "193"), ("Defesa Civil", "199"))
 

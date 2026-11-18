@@ -1,11 +1,17 @@
-from arquivos import ler_json, ler_lista
-from validacao import perfil_valido, leitura_valida
-from entradas import ler_opcao
-from cadastros import registrar_leitura, mostrar_abrigos, gerenciar_rede, configurar_perfil, menu_perfil
-from painel import exibir_painel
-from risco import obter_recomendacoes
-from previsao import simular_previsao, buscar_previsao_real
-from ajuda import checar_pessoa, pedir_ajuda, mostrar_historico
+# EQUIPE
+# Bruce Li 569168
+# Felipe Rorato	570419
+# Giovanna Andrade Parejas 569041
+# Laura Cardin Mirilli 570841
+
+from GS1_Amparo_Laura_arquivos import ler_json, ler_lista
+from GS1_Amparo_Laura_validacao import perfil_valido, leitura_valida
+from GS1_Amparo_Laura_entradas import ler_opcao
+from GS1_Amparo_Laura_cadastros import registrar_leitura, mostrar_abrigos, gerenciar_rede, configurar_perfil, menu_perfil
+from GS1_Amparo_Laura_painel import exibir_painel
+from GS1_Amparo_Laura_risco import obter_recomendacoes
+from GS1_Amparo_Laura_previsao import simular_previsao, buscar_previsao_real
+from GS1_Amparo_Laura_ajuda import checar_pessoa, pedir_ajuda, mostrar_historico
 
 MENU = """
 1. Ver recomendações completas

@@ -1,3 +1,12 @@
+## Equipe
+
+| Nome | RM |
+|------|----|
+| Bruce Li | 569168 |
+| Felipe Rorato | 570419 |
+| Giovanna Andrade Parejas | 569041 |
+| Laura Cardin Mirilli | 570841 |
+
 # prompts.md — Uso de IA na aplicação Python do Amparo
  
 ## 1. Ferramentas utilizadas

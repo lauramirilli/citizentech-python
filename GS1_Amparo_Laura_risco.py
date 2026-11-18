@@ -1,3 +1,10 @@
+# EQUIPE
+# Bruce Li 569168
+# Felipe Rorato	570419
+# Giovanna Andrade Parejas 569041
+# Laura Cardin Mirilli 570841
+
+
 NIVEIS = ("NORMAL", "ATENÇÃO", "PERIGO")
 
 LIMITE_CALOR_ATENCAO = 32
