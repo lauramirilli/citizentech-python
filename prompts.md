@@ -128,10 +128,9 @@ Na sequência:
 **O que decidimos:** aceitamos a função gerada pela IA.
 
 **Verificação:**
-- [ ] Registrar três leituras simuladas e conferir os horários com 10 minutos de diferença.
-- [ ] Testar entrada inválida na leitura manual ("abc") e valor com vírgula ("31,5").
-- [ ] Conferir o `leituras.json` gerado.
-- [ ] Saber explicar cada linha da função (constantes, `match/case`, `min`/`max` da umidade).
+- [x] Registrar três leituras simuladas e conferir os horários com 10 minutos de diferença.
+- [x] Testar entrada inválida na leitura manual ("abc") e valor com vírgula ("31,5").
+- [x] Conferir o `leituras.json` gerado.
 
 ### Entrada 9 — Consumo da API de previsão (Open-Meteo)
 **Finalidade:** buscar a previsão real de chuva do bairro da pessoa atendida, mantendo o programa funcional sem internet.
@@ -247,18 +246,28 @@ Na sequência:
 | Economizou tempo da equipe escrevendo docstring para as funções implementadas | Analisou cada função e descreveu corretamente | Revisamos e aceitamos as sugestões|
 | Pedido de ajuda (`ajuda.py`) | Revisou o código e apontou os erros; depois reorganizou o visual a pedido da equipe | Escreveu a lógica, corrigiu os erros apontados e testou |
 | Dados de exemplo (`BAIRROS`, `abrigos.json`) | Escolheu os bairros com fonte e criou o arquivo com os 7 abrigos fictícios | Revisou a sugestão e aceitou |
-| <!-- preencher conforme o código for escrito --> | | |
  
 ## 4. Análise crítica
- 
-<!-- Escrever no final do projeto. Pontos já observados para desenvolver:
-Benefícios:
-- Agilizou o planejamento e a busca de fontes para os limites.
-- Ajudou a cruzar os requisitos da disciplina com o projeto.
-Limitações:
-- A IA citou notícias como fonte da escala do INMET; foi preciso conferir na fonte oficial.
-- Não existe limite oficial para "subida rápida"; a IA disse isso em vez de inventar um número, mas a decisão final foi da equipe.
-- A primeira versão do menu não considerava que o risco precisa estar sempre visível; o ajuste veio da equipe.
-Dificuldades:
-- (preencher)
--->
+
+### Benefícios
+
+- **Planejamento mais rápido e mais completo.** A IA ajudou a transformar a ideia do Amparo numa arquitetura de módulos e a cruzar cada requisito da disciplina com um ponto do programa. Isso evitou descobrir, perto da entrega, que algum conceito obrigatório tinha ficado de fora.
+- **Busca de fontes para as regras de decisão.** Os limites de chuva (INMET) e de calor (NOAA) vieram de pesquisas feitas com a IA, o que deu fundamento às regras do código e ligou o Python ao relatório de Cálculo.
+- **Diagnóstico de erros.** Em vários momentos, a IA explicou a causa de um erro em vez de só corrigi-lo: o caminho relativo que fazia o programa não encontrar a pasta `dados/`, o `None` acessado antes de ser testado, a atualização do `nivel_anterior` no lugar errado. Entender a causa nos ajudou a não repetir o erro nos módulos seguintes.
+- **Testes que não faríamos sozinhos.** O Claude Code rodou 56 cenários, incluindo casos extremos (arquivos editados à mão, respostas malformadas da API, Ctrl+C). Ele encontrou 21 falhas, entre elas um falso alarme de PERIGO que apareceria no uso normal.
+
+### Limitações
+
+- **As fontes precisaram ser conferidas.** A escala do INMET foi trazida a partir de notícias que a reproduziam, e não do site oficial. Para outros pontos, como um limite de subida de temperatura em °C/h, a IA informou que não existe valor oficial. A decisão de usar a projeção de 1 hora no lugar foi nossa.
+- **O código gerado pela IA também tinha erros.** Algumas falhas encontradas nos testes estavam em trechos escritos pela própria IA: a leitura simulada podia passar de 50 °C, e a mensagem "Bairro do voluntário" aparecia no cadastro do perfil. A primeira versão do índice de calor também usava uma simplificação que criava um salto na fórmula, que só foi percebido na análise de limites do relatório de Cálculo e motivou a correção para o critério completo da NOAA.
+- **A IA nem sempre considerou o usuário real.** Na primeira proposta, o risco era uma opção do menu. A mudança para um painel sempre visível partiu da equipe, pensando em quem precisa ver o risco o tempo todo.
+- **A IA não testou tudo.** O ambiente da IA não acessava a API Open-Meteo. O teste com a previsão real foi feito por nós.
+
+### Dificuldades
+
+- **Entender o código antes de aceitá-lo.** Em alguns momentos pedimos à IA que escrevesse partes das funções. O risco nesses casos é aceitar código que funciona sem saber explicá-lo. Por isso, cada trecho gerado foi revisado e testado antes de entrar no projeto, e mantivemos as decisões de comportamento com a equipe (o desempate pela chuva, a subida de um nível por vez, a checagem só na mudança para PERIGO).
+- **Manter o registro em dia.** Documentar cada interação no momento em que ela acontece exigiu disciplina, mas foi o que permitiu este arquivo refletir o uso real da IA e não uma reconstrução feita no final.
+
+### Conclusão
+
+A IA funcionou melhor como revisora, pesquisadora e testadora do que como autora. Os ganhos mais importantes vieram quando ela explicou um problema ou encontrou um erro, e não quando gerou código pronto. As decisões sobre o comportamento do Amparo, sobre o que priorizar para o cidadão e sobre o que ficava dentro do escopo da disciplina continuaram sendo da equipe.
